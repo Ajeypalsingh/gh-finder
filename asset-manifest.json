@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/gh-finder/static/css/main.10e8795c.css",
-    "main.js": "/gh-finder/static/js/main.2a0c4dcb.js",
+    "main.js": "/gh-finder/static/js/main.79756d86.js",
     "index.html": "/gh-finder/index.html",
     "main.10e8795c.css.map": "/gh-finder/static/css/main.10e8795c.css.map",
-    "main.2a0c4dcb.js.map": "/gh-finder/static/js/main.2a0c4dcb.js.map"
+    "main.79756d86.js.map": "/gh-finder/static/js/main.79756d86.js.map"
   },
   "entrypoints": [
     "static/css/main.10e8795c.css",
-    "static/js/main.2a0c4dcb.js"
+    "static/js/main.79756d86.js"
   ]
 }
