@@ -26,12 +26,13 @@ function User() {
         };
         const getUserRepo = async () => {
             const response = await axios.get(repoUrl);
-            setRepos(response.data)
+            setRepos(response.data);
         };
 
         getUserData();
         getUserRepo();
     }, [username]);
+
 
     const options = {
         month: 'short',
@@ -81,10 +82,10 @@ function User() {
                 <h2>{(user.public_repos > 0) ? "My Repositories" : "No Repositories"}</h2>
                 {repos.map((repo) =>
 
-                    <div className='repos'>
+                    <div className='repos' key={repo.id}>
                         <div className='repoInfo'>
                             <p className='repoName'>
-                                <a href={`https://github.com/Ajeypalsingh/${repo.name}`}>
+                                <a href={`https://github.com/${repo.owner.login}/${repo.name}`}>
                                     {repo.name}
                                 </a>
                             </p>
