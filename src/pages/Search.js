@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 
@@ -16,7 +16,7 @@ function Search() {
             setInput('');
             return true
         } catch (err) {
-            setErrMessage('Invalid user');
+            setErrMessage('Invalid user....');
             setInput('');
         }
     };

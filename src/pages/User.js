@@ -16,7 +16,7 @@ function User() {
     }
 
 
-    const userUrl = `https://api.github.com/users/${username}`;
+    const userUrl = `https://api.github.com/users/${username}`
     const repoUrl = `https://api.github.com/users/${username}/repos`;
 
     useEffect(() => {
@@ -32,7 +32,6 @@ function User() {
         getUserData();
         getUserRepo();
     }, [username]);
-
 
     const options = {
         month: 'short',
@@ -79,13 +78,13 @@ function User() {
 
 
             <section className='repo-section'>
-                <h2>{(user.public_repos > 0) ? "My Repositories" : "No Repositories"}</h2>
+                <h2>{(user.public_repos > 0) ? `My Repositor${(user.public_repos === 1) ? "y" : "ies"}` : "No repositories found...."}</h2>
                 {repos.map((repo) =>
 
                     <div className='repos' key={repo.id}>
                         <div className='repoInfo'>
                             <p className='repoName'>
-                                <a href={`https://github.com/${repo.owner.login}/${repo.name}`}>
+                                <a key={repo.id} href={`https://github.com/${repo.owner.login}/${repo.name}`}>
                                     {repo.name}
                                 </a>
                             </p>

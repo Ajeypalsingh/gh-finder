@@ -1,7 +1,7 @@
 :root {
   --app-dark-bg: #1a1d28;
   --app-green: #00a86b;
-  --app-green-hover: #33ab4e;
+  --app-green-hover: #3b9650;
   --app-purple: #833cff;
   --app-orange: #ff833c;
   --app-blue: #3c57ff;
@@ -43,8 +43,39 @@ main {
 .search h1 {
   color: var(--app-green);
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
 }
+
+form {
+  margin-top: 15px;
+  display: flex;
+}
+
+input[type="text"] {
+  height: 42px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.search-user {
+  margin-left: 10px;
+  padding: 0 15px;
+  height: 42px;
+  width: 140px;
+  border-radius: 5px;
+  background-color:var(--app-green);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1.3px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
 
 .profile {
   height: 400px;
@@ -190,42 +221,19 @@ img {
 }
 
 .description {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
   padding: 5px 0;
   color: var(--app-white);
 }
 
-form {
-  margin-top: 15px;
-  display: flex;
-}
-
-input[type="text"] {
-  height: 42px;
-  width: 300px;
-  border-radius: 5px;
-  padding: 0 15px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.search-user {
-  margin-left: 10px;
-  padding: 0 10px;
-  height: 42px;
-  border-radius: 5px;
-  background-color: #00a86b;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #fff;
-  letter-spacing: 1.3px;
-  cursor: pointer;
-}
 
 .error {
-  color: var(--app-white);
+  color: var(--app-red);
+  height: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 5px;
 }
 
 .back-to-home {
@@ -236,7 +244,7 @@ input[type="text"] {
   padding: 5px 25px;
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--app-white);
   border-radius: 5px;
   transition: all ease-in-out 0.3s;
@@ -257,5 +265,20 @@ input[type="text"] {
 
   .repoInfo {
     display: block;
+  }
+
+  form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type="text"] {
+    margin-bottom: 20px;
+  }
+  
+
+  .search-user{
+    margin: 0;
   }
 }
