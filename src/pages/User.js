@@ -16,7 +16,7 @@ function User() {
     }
 
 
-    const userUrl = `https://api.github.com/users/${username}`
+    const userUrl = `https://api.github.com/users/${username}`;
     const repoUrl = `https://api.github.com/users/${username}/repos`;
 
     useEffect(() => {
